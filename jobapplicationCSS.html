@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+    
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+    
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+    
+    fieldset {
+      border: none;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    legend {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    /* Form Layout */
+    form {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    fieldset + fieldset {
+      margin-top: 20px;
+    }
+    
+    /* Buttons */
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <form action="" method="post">
+    <h2>Job Application Form</h2>
+    <label for="IEMAIL">EMAIL-ID: Shivekmittalr@gmail.com<input type="checkbox" id="IEMAIL" name="IEMAIL" value="email" checked></label>
+    <p>Please fill out the following form to apply for the job:</p>
+
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+      <label for="Address">Address:</label>
+      <textarea id="Address" name="Address" required></textarea><br><br>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="">Gender</option>
+        <option value="option1">Male</option>
+        <option value="option2">Female</option>
+        <option value="option3">Prefer not to Say</option>
+      </select><br><br>
+      <label for="Nationality">Nationality</label>
+      <select id="Nationality" name="Nationality">
+        <option value="">Nationality</option>
+        <option value="option1">Afghanistan</option>  
+        <option value="option1">Albania</option>
+        <option value="option1">Algeria</option>
+        <option value="option1">Andorra</option>
+        <option value="option1">Angola</option>
+        <option value="option1">Antigua and Barbuda</option>
+        <option value="option1">Argentina</option>
+        <option value="option1">Armenia</option>
+        <option value="option1">Australia</option>
+        <option value="option1">Austria</option>
+        <option value="option1">Azerbaijan</option>
+        <option value="option1">The Bahamas</option>
+        <option value="option1">Bahrain</option>
+       <option value="option1">Bangladesh</option>
+        <option value="option1">Barbados</option>
+        <option value="option1">Belarus</option>
+        <option value="option1">Belgium</option>
+        <option value="option1">Belize</option>
+        <option value="option1">Benin</option>
+        <option value="option1">Bhutan</option>
+        <option value="option1">Bolivia</option>
+        <option value="option1">Bosnia and Herzegovina</option>
+        <option value="option1">Botswana</option>
+        <option value="option1">Brazil</option>
+        <option value="option1">Brunei</option>
+        <option value="option1">Bulgaria</option>
+        <option value="option1">Burkina Faso</option>
+        <option value="option1">Burundi</option>
+        <option value="option1">Cabo Verde</option>
+        <option value="option1">Cambodia</option>
+        <option value="option1">Cameroon</option>
+        <option value="option1">Canada</option>
+        <option value="option1">Central African Republic</option>
+        <option value="option1">Chad</option>
+        <option value="option1">Chile</option>
+        <option value="option1">China</option>
+        <option value="option1">Colombia</option>
+        <option value="option1">Comoros</option>
+        <option value="option1">Congo, Democratic Republic of the</option>
+        <option value="option1">Congo, Republic of the</option>
+        <option value="option1">Costa Rica</option>
+        <option value="option1">Côte d’Ivoire</option>
+        <option value="option1">Croatia</option>
+        <option value="option1">Cuba</option>
+        <option value="option1">Cyprus</option>
+        <option value="option1">Czech Republic</option>
+        <option value="option1">Denmark</option>
+        <option value="option1">Djibouti</option>
+        <option value="option1">Dominica</option>
+        <option value="option1">Dominican Republic</option>
+        <option value="option1">East Timor (Timor-Leste)</option>
+        <option value="option1">Ecuador</option>
+        <option value="option1">Egypt</option>
+        <option value="option1">El Salvador</option>
+        <option value="option1">Equatorial Guinea</option>
+        <option value="option1">Eritrea</option>
+        <option value="option1">Estonia</option>
+        <option value="option1">Eswatini</option>
+        <option value="option1">Ethiopia</option>
+        <option value="option1">Fiji</option>
+        <option value="option1">Finland</option>
+        <option value="option1">France</option>
+        <option value="option1">Gabon</option>
+        <option value="option1">The Gambia</option>
+        <option value="option1">Georgia</option>
+        <option value="option1">Germany</option>
+        <option value="option1">Ghana</option>
+        <option value="option1">Greece</option>
+        <option value="option1">Grenada</option>
+        <option value="option1">Guatemala</option>
+        <option value="option1">Guinea</option>
+        <option value="option1">Guinea-Bissau</option>
+        <option value="option1">Guyana</option>
+        <option value="option1">Haiti</option>
+        <option value="option1">Honduras</option>
+        <option value="option1">Hungary</option>
+        <option value="option1">Iceland</option>
+        <option value="option1">India</option>
+        <option value="option1">Indonesia</option>
+        <option value="option1">Iran</option>
+        <option value="option1">Iraq</option>
+        <option value="option1">Ireland</option>
+        <option value="option1">Israel</option>
+        <option value="option1">Italy</option>
+        <option value="option1">Jamaica</option>
+        <option value="option1">Japan</option>
+        <option value="option1">Jordan</option>
+        <option value="option1">Kazakhstan</option>
+        <option value="option1">Kenya</option>
+        <option value="option1">Kiribati</option>
+        <option value="option1">Korea, North</option>
+        <option value="option1">Korea, South</option>
+        <option value="option1">Kosovo</option>
+        <option value="option1">Kuwait</option>
+        <option value="option1">Kyrgyzstan</option>
+        <option value="option1">Laos</option>
+        <option value="option1">Latvia</option>
+        <option value="option1">Lebanon</option>
+        <option value="option1">Lesotho</option>
+        <option value="option1">Liberia</option>
+        <option value="option1">Libya</option>
+        <option value="option1">Liechtenstein</option>
+        <option value="option1">Lithuania</option>
+        <option value="option1">Luxembourg</option>
+        <option value="option1">Madagascar</option>
+        <option value="option1">Malawi</option>
+        <option value="option1">Malaysia</option>
+        <option value="option1">Maldives</option>
+        <option value="option1">Mali</option>
+        <option value="option1">Malta</option>
+        <option value="option1">Marshall Islands</option>
+        <option value="option1">Mauritania</option>
+        <option value="option1">Mauritius</option>
+        <option value="option1">Mexico</option>
+        <option value="option1">Micronesia, Federated States of</option>
+        <option value="option1">Moldova</option>
+        <option value="option1">Monaco</option>
+        <option value="option1">Mongolia</option>
+        <option value="option1">Montenegro</option>
+        <option value="option1">Morocco</option>
+        <option value="option1">Mozambique</option>
+        <option value="option1">Myanmar (Burma)</option>
+        <option value="option1">Namibia</option>
+        <option value="option1">Nauru</option>
+        <option value="option1">Nepal</option>
+        <option value="option1">Netherlands</option>
+        <option value="option1">New Zealand</option>
+        <option value="option1">Nicaragua</option>
+        <option value="option1">Niger</option>
+        <option value="option1">Nigeria</option>
+        <option value="option1">North Macedonia</option>
+        <option value="option1">Norway</option>
+        <option value="option1">Oman</option>
+        <option value="option1">Pakistan</option>
+        <option value="option1">Palau</option>
+        <option value="option1">Panama</option>
+        <option value="option1">Papua New Guinea</option>
+        <option value="option1">Paraguay</option>
+        <option value="option1">Peru</option>
+        <option value="option1">Philippines</option>
+        <option value="option1">Poland</option>
+        <option value="option1">Portugal</option>
+        <option value="option1">Qatar</option>
+        <option value="option1">Romania</option>
+        <option value="option1">Russia</option>
+        <option value="option1">Rwanda</option>
+        <option value="option1">Saint Kitts and Nevis</option>
+        <option value="option1">Saint Lucia</option>
+        <option value="option1">Saint Vincent and the Grenadines</option>
+        <option value="option1">Samoa</option>
+        <option value="option1">San Marino</option>
+        <option value="option1">Sao Tome and Principe</option>
+        <option value="option1">Saudi Arabia</option>
+        <option value="option1">Senegal</option>
+        <option value="option1">Serbia</option>
+        <option value="option1">Seychelles</option>
+        <option value="option1">Sierra Leone</option>
+        <option value="option1">Singapore</option>
+        <option value="option1">Slovakia</option>
+        <option value="option1">Slovenia</option>
+        <option value="option1">Solomon Islands</option>
+        <option value="option1">Somalia</option>
+        <option value="option1">South Africa</option>
+        <option value="option1">Spain</option>
+        <option value="option1">Sri Lanka</option>
+        <option value="option1">Sudan</option>
+        <option value="option1">Sudan, South</option>
+        <option value="option1">Suriname</option>
+        <option value="option1">Sweden</option>
+        <option value="option1">Switzerland</option>
+        <option value="option1">Syria</option>
+        <option value="option1">Taiwan</option>
+        <option value="option1">Tajikistan</option>
+        <option value="option1">Tanzania</option>
+        <option value="option1">Thailand</option>
+        <option value="option1">Togo</option>
+        <option value="option1">Tonga</option>
+        <option value="option1">Trinidad and Tobago</option>
+        <option value="option1">Tunisia</option>
+        <option value="option1">Turkey</option>
+        <option value="option1">Turkmenistan</option>
+        <option value="option1">Tuvalu</option>
+        <option value="option1">Uganda</option>
+        <option value="option1">Ukraine</option>
+        <option value="option1">United Arab Emirates</option>
+        <option value="option1">United Kingdom</option>
+        <option value="option1">United States</option>
+        <option value="option1">Uruguay</option>
+        <option value="option1">Uzbekistan</option>
+        <option value="option1">Vanuatu</option>
+        <option value="option1">Vatican City</option>
+        <option value="option1">Venezuela</option>
+        <option value="option1">Vietnam</option>
+        <option value="option1">Yemen</option>
+        <option value="option1">Zambia</option>
+        <option value="option1">Zimbabwe</option>
+      </select><br><br>
+      
+    </fieldset>
+  
+    <fieldset>
+      <legend>Education</legend>
+      <label for="degree">Degree:</label>
+      <input type="text" id="degree" name="degree"><br><br>
+      <label for="institution">Institution:</label>
+      <input type="text" id="institution" name="institution"><br><br>
+      <label for="graduation-date">Graduation Date:</label>
+      <input type="date" id="graduation-date" name="graduation-date"><br><br>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Work Experience</legend>
+      <label for="company">Company:</label>
+      <input type="text" id="company" name="company"><br><br>
+      <label for="job-title">Job Title:</label>
+      <input type="text" id="job-title" name="job-title"><br><br>
+      <label for="start-date">Start Date:</label>
+      <input type="date" id="start-date" name="start-date"><br><br>
+      <label for="end-date">End Date:</label>
+      <input type="date" id="end-date" name="end-date"><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Skills</legend>
+      <label for="skills">Skills:</label><br>
+      <input type="checkbox" id="html" name="skills[]" value="HTML"> HTML
+      <input type="checkbox" id="css" name="skills[]" value="CSS"> CSS
+      <input type="checkbox" id="javascript" name="skills[]" value="JavaScript"> JavaScript
+      <input type="checkbox" id="python" name="skills[]" value="Python"> Python
+      <input type="checkbox" id="java" name="skills[]" value="Java"> Java
+      <label for="skills">others:</label>
+      <textarea id="skills" name="skills"></textarea><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Resume</legend>
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" name="resume"><br><br>
+    </fieldset>
+  
+    <input type="submit" value="Submit Application">
+  </form>
+</body>
+</html>

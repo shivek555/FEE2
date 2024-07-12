@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Descendant Selector */
+        div p {
+          font-size: 1.1rem;
+        }
+      
+        /* Child Selector */
+        div > p {
+          font-size: 1.2rem;
+        }
+      
+        /* Adjacent Sibling Selector */
+        h2 + p {
+          font-size: 1.3rem;
+        }
+      
+        /* General Sibling Selector */
+        h2 ~ p {
+          font-size: 1.4rem;
+        }
+      
+        /* Example of using combinators with simple selectors */
+        h2 {
+          & + p {
+            & ~ p {
+              font-style: italic;
+            }
+            & + p {
+              color: red;
+            }
+          }
+        }
+        .myClass {
+          & + p {
+            text-decoration: underline;
+          }
+        }
+        #myId {
+          & > .myClass {
+            outline: 3px dashed red;
+          }
+        }
+        * {
+          & > p {
+            font-size: 1.1rem;
+          }
+        }
+      </style>
+      
+</head>
+<body>
+   
+      <h2 class="myClass" id="myId">
+        No selectors match. <span class="myClass">This span has an outline</span> as it is both myClass and a child of #myId.
+      </h2>
+      <p>The first paragraph is underlined. All the paragraphs are 1.1rem.</p>
+      <p>
+        The second paragraph is red. This and the following paragraphs are italic.
+      </p>
+      <p>The third paragraph is NOT red. It is italic and 1.1rem.</p>
+      <p class="myClass">
+        Does not have an outline; this is a sibling of H2, not a child. It is italic and 1.1rem.
+      </p>
+      <div>
+        <p>This paragraph is 1.1rem because it is inside a div.</p>
+      </div>
+</body>
+</html>
