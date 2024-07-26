@@ -1,0 +1,104 @@
+<!-- combinatorial_selectors.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Combinatorial Selectors</title>
+  <style>
+    /* Add some basic styling to make the page look nicer */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0; /* light gray background */
+    }
+    .container {
+      max-width: 600px; /* limit the width of the container */
+      margin: 40px auto; /* center the container */
+      padding: 20px; /* add some padding around the container */
+      background-color: #fff; /* white background */
+      border: 1px solid #ddd; /* light gray border */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle shadow */
+    }
+    .combination {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-bottom: 1px solid #ccc; /* light gray border */
+    }
+    .combination:last-child {
+      border-bottom: none; /* remove the border from the last combination */
+    }
+    label {
+      display: block; /* make labels block-level elements */
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="number"] {
+      width: 100%; /* make input fields full-width */
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc; /* light gray border */
+    }
+    button[type="button"] {
+      background-color: #4CAF50; /* green background */
+      color: #fff; /* white text */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer; /* change the cursor to a pointing hand */
+    }
+    button[type="button"]:hover {
+      background-color: #3e8e41; /* darker green background on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Combinatorial Selectors</h1>
+    <p>Choose a set of elements and a combination size:</p>
+    <form>
+      <label for="elements">Elements:</label>
+      <input type="text" id="elements" value="1,2,3,4,5">
+      <br><br>
+      <label for="r">Combination size:</label>
+      <input type="number" id="r" value="2">
+      <br><br>
+      <button type="button" onclick="generateCombinations()">Generate Combinations</button>
+    </form>
+    <div id="combinations"></div>
+  </div>
+
+  <script>
+    function generateCombinations() {
+      const elementsInput = document.getElementById("elements");
+      const rInput = document.getElementById("r");
+      const elements = elementsInput.value.split(",");
+      const r = parseInt(rInput.value);
+
+      const combinations = combinatorialSelector(elements, r);
+      const combinationsDiv = document.getElementById("combinations");
+      combinationsDiv.innerHTML = "";
+
+      for (const combination of combinations) {
+        const combinationDiv = document.createElement("div");
+        combinationDiv.className = "combination";
+        combinationDiv.textContent = combination.join(", ");
+        combinationsDiv.appendChild(combinationDiv);
+      }
+    }
+
+    function combinatorialSelector(elements, r) {
+      if (r === 0) {
+        return [[]];
+      } else {
+        const combinations = [];
+        for (let i = 0; i < elements.length; i++) {
+          const elem = elements[i];
+          const remainingElements = elements.slice(0, i).concat(elements.slice(i + 1));
+          for (const combination of combinatorialSelector(remainingElements, r - 1)) {
+            combinations.push([elem].concat(combination));
+          }
+        }
+        return combinations;
+      }
+    }
+  </script>
+</body>
+</html>

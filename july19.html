@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+<style>
+       
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #fff;
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+/* Media Queries */
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    
+    }
+    section {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    main {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    section {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+/* Small screens (mobiles) */
+@media only screen and (max-width: 767px) {
+    main {
+        max-width: 100%;
+        margin: 0;
+    }
+    section {
+        width: 100%;
+        margin: 0;
+    }
+    nav  {
+        flex-direction: column;
+    }
+    nav li {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">home</a></li>
+            <ul>
+                <li><a href="#">product</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <a href="#">signup</a></li>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Welcome to our website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Responsive Website</p>
+    </footer>
+</body>
+</html>
