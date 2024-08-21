@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2D Array Traversal</title>
+  <style>
+    
+    body {
+      font-family: monospace;
+      background-color: #f0f0f0;
+    }
+    .traversal {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .traversal h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .traversal-output {
+      font-size: 18px;
+      color: #666;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>2D Array Traversal</h1>
+  <div class="traversal">
+    <h2>Zigzag Traversal:</h2>
+    <div class="traversal-output" id="zigzag-output"></div>
+  </div>
+  <div class="traversal">
+    <h2>Spiral Traversal:</h2>
+    <div class="traversal-output" id="spiral-output"></div>
+  </div>
+  <h1>90 degree rotation</h1>
+  <div class="traversal">
+    <h2>rotation:</h2>
+    <div class="traversal-output" id="output"></div>
+  </div>
+
+<script>
+const arr = [
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9, 10, 11, 12],
+  [13, 14, 15, 16]
+];
+
+function zigzagTraversal(arr) {
+  const output = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (i % 2 === 0) {
+      output.push(...arr[i]);
+    } else {
+      output.push(...arr[i].reverse());
+    }
+  }
+  return output.join(' ');
+}
+
+
+function spiralTraversal(arr) {
+  const output = [];
+  let top = 0;
+  let bottom = arr.length - 1;
+  let left = 0;
+  let right = arr[0].length - 1;
+
+  while (top <= bottom && left <= right) {
+
+    for (let i = left; i <= right; i++) {
+      output.push(arr[top][i]);
+    }
+    top++;
+
+
+    for (let i = top; i <= bottom; i++) {
+      output.push(arr[i][right]);
+    }
+    right--;
+
+
+    if (top <= bottom) {
+      for (let i = right; i >= left; i--) {
+        output.push(arr[bottom][i]);
+      }
+      bottom--;
+    }
+
+
+    if (left <= right) {
+      for (let i = bottom; i >= top; i--) {
+        output.push(arr[i][left]);
+      }
+      left++;
+    }
+  }
+  return output.join(' ');
+}
+
+document.getElementById('zigzag-output').innerHTML = zigzagTraversal(arr);
+document.getElementById('spiral-output').innerHTML = spiralTraversal(arr);
+</script>
+<script>
+    function rotateArray(arr) {
+      const size = Math.sqrt(arr.length);
+      const matrix = [];
+      for (let i = 0; i < size; i++) {
+        matrix[i] = arr.slice(i * size, (i + 1) * size);
+      }
+      const rotatedMatrix = matrix[0].map((_, colIndex) => matrix.map(row => row[colIndex]).reverse());
+      return rotatedMatrix;
+    }
+
+    function printMatrix(matrix) {
+      const outputDiv = document.getElementById("output");
+      outputDiv.innerHTML = "";
+      matrix.forEach(row => {
+        const rowElement = document.createElement("div");
+        rowElement.textContent = row.join(" ");
+        outputDiv.appendChild(rowElement);
+      });
+    }
+
+    const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14,15,16];
+    const rotatedArr = rotateArray(arr1);
+    printMatrix(rotatedArr);
+  </script>
+
+
+</body>
+</html>
