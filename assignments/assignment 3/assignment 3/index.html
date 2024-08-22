@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Screw it, let's ride.">
+    <title>Shop Harley-Davidson Motorcycle</title>
+    <!-- FAV-iCON -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/material-kit/material-kit.min.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- media -->
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+
+<body>
+
+    <!-- ======= Top-Bar ======= -->
+    <div id="topbar" class="d-none d-sm-flex font-roboto">
+        <div class="container d-flex align-items-center justify-content-end">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link white" href="#">Learn to Ride</a></li>
+                <li class="nav-item"><a class="nav-link white" href="#">Test Ride</a></li>
+                <li class="nav-item"><a class="nav-link white" href="#">Dealer Locator</a></li>
+                <li class="nav-item">
+                    <a class="nav-link white" href="#">
+                        <img src="assets/img/india.png" alt="india" class="india-img">India - English
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ======= HEADER START ======= -->
+    <header id="header" class="header container d-flex justify-content-between align-items-center p-0">
+        <div class="d-flex align-items-center">
+            <div class="logo pe-5">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <nav class="d-none d-lg-block">
+                <ul class="nav m-0 p-0 font-oswald">
+                    <li class="nav-item"><a class="d-flex align-items-center nav-link fw-bold" href="#">BIKES</a></li>
+                    <li class="nav-item"><a class="d-flex align-items-center nav-link fw-bold" href="#">PARTS</a></li>
+                    <li class="nav-item"><a class="d-flex align-items-center nav-link fw-bold" href="#">MENS</a></li>
+                    <li class="nav-item"><a class="d-flex align-items-center nav-link fw-bold" href="#">WOMENS</a></li>
+                    <li class="nav-item"><a class="d-flex align-items-center nav-link fw-bold" href="#">EXPERIENCE H-D</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="d-flex align-items-center">
+            <span class="search pb-1 d-none d-sm-block">
+                <i class='bx bx-search'></i>
+            </span>
+
+            <!-- ======= SignIn-Bar-Controll ======= -->
+            <button class="signin text-center border-0 ps-4 bg-white" data-bs-toggle="offcanvas" data-bs-target="#signin" aria-controls="offcanvasRight">
+                <i class="bi bi-person-fill d-block"></i>
+                Sign In
+            </button>
+            <button class="menu-control text-center border-0 bg-white ps-4 d-block d-lg-none"><i class='bx bx-menu'></i></button>
+        </div>
+    </header>
+    <!-- ======= HEADER END ======= -->
+    <!-- ======= SignIn-Bar START ======= -->
+    <div class="signin-bar offcanvas offcanvas-end" tabindex="-1" id="signin" aria-labelledby="offcanvasTopLabel">
+        <button type="button" class="signin-close border-0 bg-white" data-bs-dismiss="offcanvas" aria-label="Close"><i class='bx bx-x'></i></button>
+        <div class="offcanvas-body">
+            <h2 class="fw-bolder display-6 black">Sign In</h2>
+            <form class="pt-4" action="index.html">
+                <div class="pb-3">
+                    <div class="input-group input-group-outline mb-2">
+                        <label class="form-label">Email</label>
+                        <input class="form-control" type="email" required>
+                    </div>
+                </div>
+                <div class="pb-4">
+                    <div class="input-group input-group-outline mb-2">
+                        <label class="form-label">Password</label>
+                        <input class="form-control" type="password" required>
+                    </div>
+                    <a href="#" class="form-text text-decoration-underline black">Forgot Password</a>
+                </div>
+                <p class="fs-6 black">By logging in, you agree to the <a href="#" class="form-text text-decoration-underline black">terms of use</a> and
+                    <a href="#" class="form-text text-decoration-underline black">privacy policy</a>.
+                </p>
+                <input type="submit" value="SIGN IN" class="signin-btn fw-bold white my-2 transition02">
+            </form>
+            <hr style=" border: 1px solid black;">
+
+            <!-- ======= Sign-Up-Bar-Controll ======= -->
+            <button class="create-acc border-0 bg-white fw-bold fs-5 d-flex align-items-center" data-bs-toggle="offcanvas" data-bs-target="#signup"
+             aria-controls="offcanvasRight">Create Account
+                <i class="bx bx-right-arrow-alt bx-tada fs-4 ps-2 transition02"></i>
+            </button>
+        </div>
+    </div>
+    <!-- ======= SignIn-Bar END ======= -->
+
+    <!-- ======= SignUp-Bar START ======= -->
+    <div class="signup-bar offcanvas offcanvas-end" tabindex="-1" id="signup" aria-labelledby="offcanvasTopLabel">
+        <button type="button" class="signup-close border-0 bg-white" data-bs-dismiss="offcanvas" aria-label="Close"><i class='bx bx-x'></i></button>
+        <div class="offcanvas-body">
+            <h2 class="fw-bolder display-6 black">Create Account</h2>
+            <span class="black">Step 1 of 2</span>
+            <form class="pt-4" action="index.html">
+                <div class="pb-3">
+                    <div class="input-group input-group-outline mb-2">
+                        <label class="form-label">Email</label>
+                        <input class="form-control" type="email" required>
+                    </div>
+                </div>
+                <div class="pb-4">
+                    <div class="input-group input-group-outline mb-2">
+                        <label class="form-label">Password *</label>
+                        <input class="form-control" type="password" required>
+                    </div>
+                </div>
+                <div class="pb-4">
+                    <div class="input-group input-group-outline mb-2">
+                        <label class="form-label">Confirm Password *</label>
+                        <input class="form-control" type="password" required>
+                    </div>
+                </div>
+
+                <!-- CONTINUE -->
+                <input type="submit" value="CONTINUE" class="signup-btn fw-bold white my-2 transition02">
+            </form>
+        </div>
+    </div>
+    <!-- ======= SignUp-Bar END ======= -->
+    <main>
+        <!-- ======= HERO START ======= -->
+        <section class="hero" id="hero">
+            <div class="heroDesktop d-none d-lg-block">
+                <div class="hero-content">
+                    <h1 class="bold white">Harley-Davidson X™440</h1>
+                    <p class="fw-normal white py-2">Explore the all-new Harley-Davidson X440</p>
+                    <a class="seethebike d-inline-block fw-bold mt-2 p-3" href="#">SEE THE BIKE</a>
+                </div>
+            </div>
+            <div class="heroMobile d-block d-lg-none">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <div class="col-12">
+                            <img src="assets/img/hero-bg.jpg" class="img-fluid" alt="hero-bg">
+                        </div>
+                        <div class="hero-content">
+                            <h1 class="fw-bold white pb-2">Harley-Davidson X™440</h1>
+                            <p class="fw-normal white pb-2">Explore the all-new Harley-Davidson X440</p>
+                            <a class="seethebike d-inline-block fw-bold mt-2 black p-3" href="#">SEE THE BIKE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= HERO END ======= -->
+        <!-- ======= TOP-LINKS START ======= -->
+        <section class="toplinks" id="toplinks">
+            <div class="container">
+                <div class="d-flex text-center flex-wrap justify-content-center align-items-center font-oswald">
+                    <a class="fw-bolder p-3 black" href="#">HARLEY-DAVIDSON-X</a>
+                    <a class=" fw-bolder p-3 black" href="#">SPORT</a>
+                    <a class="fw-bolder p-3 black" href="#">CRUISER</a>
+                    <a class=" fw-bolder p-3 black" href="#">GRAND-AMERICAN-TOURING</a>
+                    <a class="fw-bolder p-3 black" href="#">ADVENTURE-TOURING</a>
+                </div>
+            </div>
+        </section>
+        <!-- ======= TOP-LINKS END ======= -->
+        <!-- ======= NEW-COLLECTION START ======= -->
+        <section class="new-collection mb-5 py-5" id="new-collection">
+            <div class="container">
+                <h2 class="section-heading black ">Set out on something new</h2>
+                <div class="row">
+                    <div class="col-md-4 pb-4 pb-md-0">
+                        <div class="card rounded-0 bg-transparent border-0 shadow-none">
+                            <div class="card-img">
+                                <img src="assets/img/new-collection1.png" class="img-fluid w-100" alt="New Collection">
+                            </div>
+                            <div class="content">
+                                <h5 class="black pt-2 font-oswald">FAT BOY&#8482; 114</h5>
+                                <p class="black fw-normal pt-2 pe-3">Muscle meets performance in the 2023 Fat Boy 114—A street-eater with an appetite for power.
+                                </p>
+                                <a href="#" class="seethebike fw-bold mt-2 py-3 black d-flex align-items-center">
+                                    SEE THE BIKE <i class="bi bi-arrow-right ps-2 fs-4 transition02"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-4 pb-md-0">
+                        <div class="card rounded-0 bg-transparent border-0 shadow-none">
+                            <div class="card-img">
+                                <img src="assets/img/new-collection2.png" class="img-fluid w-100" alt="New Collection">
+                            </div>
+                            <div class="content">
+                                <h5 class="black pt-2 font-oswald">PAN AMERICA&#8482; 1250 SPECIAL</h5>
+                                <p class="black fw-normal pt-2 pe-3">The road never ends on the 2023 Pan America 1250 Special. Our premier two-wheel multi-tool
+                                    built to endure, designed to explore, and engineered for adventure.
+                                </p>
+                                <a href="#" class="seethebike fw-bold mt-2 py-3 black d-flex align-items-center">
+                                    SEE THE BIKE <i class="bi bi-arrow-right ps-2 fs-4 transition02"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-4 pb-md-0">
+                        <div class="card rounded-0 bg-transparent border-0 shadow-none">
+                            <div class="card-img">
+                                <img src="assets/img/new-collection3.png" class="img-fluid w-100" alt="New Collection">
+                            </div>
+                            <div class="content">
+                                <h5 class="black pt-2 font-oswald">RODE GLIDE&#8482; SPECIAL</h5>
+                                <p class="black fw-normal pt-2 pe-3">The 2023 Road Glide Special is classic touring design paired with premium H-D features. Open
+                                    it up and take it in.
+                                </p>
+                                <a href="#" class="seethebike fw-bold mt-2 py-3 black d-flex align-items-center">
+                                    SEE THE BIKE <i class="bi bi-arrow-right ps-2 fs-4 transition02"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= NEW-COLLECTION END ======= -->
+        <!-- ======= LIMITED--EDITION START ======= -->
+        <section class="limited-edition pb-5" id="limited-edition">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7"><img src="assets/img/limited-edition1.png" alt="" class="img-fluid"></div>
+                    <div class="col-md-5 pt-5 pt-md-0 d-flex align-items-center">
+                        <div class="content">
+                            <h3 class="font-oswald black ">LIMITED EDITION</h3>
+                            <p class="font-oswald black h3">120TH ANNIVERSARY COLLECTION</p>
+                            <p class="black fw-normal pt-2">Style takes a victory lap with all-new jackets, shirts, hoodies and more in the signature Harley-Davidson
+                                black &
+                                orange.
+                            </p>
+                            <a href="#" class="hover01 fw-bold black d-flex align-items-center">
+                                SHOP THE COLLECTION <i class="bi bi-arrow-right ps-2 fs-4 transition02"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= LIMITED--EDITION END ======= -->
+        <!-- ======= NEW-ARRIVAL START ======= -->
+        <section class="new-arrival pt-5" id="new-arrival">
+            <div class="container-xxl">
+                <h2 class="section-heading black ">Set out on something new</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/img/new-arrival1.png" class="img-fluid w-100" alt="new-arrival">
+                        <a href="#" class="hover01 pt-3 fw-bold black d-flex align-items-center pb-3 pb-md-0">
+                            SHOP MEN'S <i class="bi bi-arrow-right ps-2 fs-4 transition02"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/img/new-arrival2.png" class="img-fluid w-100" alt="new-arrival">
+                        <a href="#" class="hover01 pt-3 fw-bold black d-flex align-items-center pb-3 pb-md-0">
+                            SHOP WOMEN'S <i class="bi bi-arrow-right ps-2 fs-4 transition02"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= NEW-ARRIVAL END ======= -->
+        <!-- ======= ANNIVERSARY START ======= -->
+        <section class="anniversary py-5 mt-3" id="anniversary">
+            <div class="container-fluid bg-black">
+                <div class="container">
+                    <div class="row py-4">
+                        <div class="col-12 col-lg-4">
+                            <h2 class="white fw-bolder pb-3 pb-lg-0">120th Anniversary Motorcycles</h2>
+                        </div>
+                        <div class="col-12  col-lg-8">
+                            <div class="row py-lg-2">
+                                <div class="col-12 col-md-8 col-lg-12 col-xl-8">
+                                    <p class="white fw-normal pb-3 pb-lg-0">
+                                        Celebrating 120 years of Harley-Davidson pride and craftsmanship with the limited-edition Anniversary Collection of motorcycles.
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-12 col-xl-4">
+                                    <a href="#" class="white d-inline-block fw-bold transition02">
+                                        EXPLORE THE BIKES
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= ANNIVERSARY END ======= -->
+        <!-- ======= SHOP-PARTS start ======= -->
+        <section class="shop-parts pb-5" id="shop-parts">
+            <div class="container">
+                <h2 class="section-heading black ">Shop Parts & Apparel</h2>
+                <div class="row">
+                    <div class="col-md-4 pb-4 pb-md-0">
+                        <div class="card rounded-0 bg-transparent border-0 shadow-none">
+                            <div class="card-img">
+                                <img src="assets/img/shop-parts1.png" class="img-fluid w-100" alt="New Collection">
+                            </div>
+                            <div class="content">
+                                <h5 class="black pt-2 font-oswald">MEN'S GEAR & APPAREL</h5>
+                                <p class="black font-weight-normal pt-2 pe-3 m-0">Express the rider inside on and off the bike with genuine H-D riding and casual gear.
+                                </p>
+                                <a href="#" class="seethebike font-weight-bold fs-6 py-2 black d-flex align-items-center hover01">
+                                    SHOP MEN'S <i class="bi bi-arrow-right ps-2 fs-4 transition02"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-4 pb-md-0">
+                        <div class="card rounded-0 bg-transparent border-0 shadow-none">
+                            <div class="card-img">
+                                <img src="assets/img/shop-parts2.png" class="img-fluid w-100" alt="New Collection">
+                            </div>
+                            <div class="content">
+                                <h5 class="black pt-2 font-oswald">PARTS & ACCESSORIES</h5>
+                                <p class="black font-weight-normal pt-2 pe-3 m-0">Throw it into high gear. Now is the perfect time to revamp your ride.
+                                </p>
+                                <a href="#" class="seethebike font-weight-bold fs-6 py-2 black d-flex align-items-center hover01">
+                                    SHOP PARTS <i class="bi bi-arrow-right ps-2 fs-4 transition02"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-4 pb-md-0">
+                        <div class="card rounded-0 bg-transparent border-0 shadow-none">
+                            <div class="card-img">
+                                <img src="assets/img/shop-parts3.png" class="img-fluid w-100" alt="New Collection">
+                            </div>
+                            <div class="content">
+                                <h5 class="black pt-2 font-oswald">WOMEN'S GEAR & APPAREL</h5>
+                                <p class="black font-weight-normal pt-2 pe-3 m-0">Show the world who you ride with. Get all your H-D riding and casual gear here.
+                                </p>
+                                <a href="#" class="seethebike font-weight-bold fs-6 py-2 black d-flex align-items-center hover01">
+                                    SHOP WOMEN'S <i class="bi bi-arrow-right ps-2 fs-4 transition02"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= SHOP-PARTS END ======= -->
+        <!-- ======= FOOTER START ======= -->
+        <footer class="footer bg-black pb-5" id="footer">
+            <div class="container">
+                <div class="sec1 border-bot">
+                    <img src="assets/img/logo-2.png" class="logo-2 img-fluid py-5 d-flex m-auto ms-lg-7" alt="logo">
+                </div>
+                <!-- ===== DESKTOP ===== -->
+                <div class="sec2 d-none d-md-block border-bot">
+                    <div class="row g-0 pt-5 ps-lg-7">
+                        <div class="col-md-4">
+                            <div>
+                                <span href="#" class="title font-oswald fw-bold white transition02">LEARN TO RIDE</span>
+                                <ul class="sub-title">
+                                    <li><a href="#" class="font-weight-normal white transition02">Motorcycle Training</a></li>
+                                </ul>
+                                <span href="#" class="title font-oswald fw-bold white transition02">CUSTOMER SUPPORT</span>
+                                <ul class="sub-title">
+                                    <li><a href="#" class="font-weight-normal white transition02">Contact Us</a></li>
+                                    <li><a href="#" class="font-weight-normal white transition02">Offers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div>
+                                <span href="#" class="title font-oswald fw-bold white transition02">MOTORCYCLE SERVICES</span>
+                                <ul class="sub-title">
+                                    <li><a href="#" class="font-weight-normal white transition02">Authorised Service</a></li>
+                                    <li><a href="#" class="font-weight-normal white transition02 hover02">Owner's Manuals
+                                            <i class="bi bi-arrow-up-right fs-6 ps-1"></i></a>
+                                    </li>
+                                    <li><a href="#" class="font-weight-normal white transition02">Maintenance Schedules<i class="bi bi-arrow-up-right fs-6 ps-1"></i></a>
+                                    </li>
+                                    <li><a href="#" class="font-weight-normal white transition02">Software Updates<i class="bi bi-arrow-up-right fs-6 ps-1"></i></a></li>
+                                    <li><a href="#" class="font-weight-normal white transition02">Roadside Assistance</a></li>
+                                </ul>
+                                <span href="#" class="title font-oswald fw-bold white transition02">FINANCING</span>
+                                <ul class="sub-title">
+                                    <li><a href="#" class="font-weight-normal white transition02">Motorcycle Financing</a></li>
+                                    <li><a href="#" class="font-weight-normal white transition02">Apply for Financing<i class="bi bi-arrow-up-right fs-6"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ps-sm-5">
+                            <div>
+                                <span href="#" class="title font-oswald fw-bold white transition02">ABOUT US</span>
+                                <ul class="sub-title">
+                                    <li><a href="#" class="font-weight-normal white transition02">Our Company<i class="bi bi-arrow-up-right fs-6 ps-1"></i></a></li>
+                                    <li><a href="#" class="font-weight-normal white transition02">Careers</a></li>
+                                    <li><a href="#" class="font-weight-normal white transition02">Investors<i class="bi bi-arrow-up-right fs-6 ps-1"></i></a></li>
+                                    <li><a href="#" class="font-weight-normal white transition02">Sustainability</a></li>
+                                    <li><a href="#" class="font-weight-normal white transition02">Become a Dealer</a></li>
+                                    <li><a href="#" class="font-weight-normal white transition02">Factory Tours</a></li>
+                                    <li><a href="#" class="font-weight-normal white transition02">Museum</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec3 border-bot py-3 d-flex align-items-center">
+                    <ul class="d-flex flex-wrap  m-0 p-0 ps-lg-8">
+                        <li class="px-3 my-3 border-end"><a href="#" class="white d-block d-lg-inline-block">Sitemap</a></li>
+                        <li class="px-3 my-3 pe-5"><a href="#" class="white d-block d-lg-inline-block">Disclaimers</a></li>
+                        <li class="px-3 my-3 border-end"><a href="#" class="white d-block d-lg-inline-block">Terms of Use</a></li>
+                        <li class="px-3 my-3 border-end"><a href="#" class="white d-block d-lg-inline-block">Privacy Policy</a></li>
+                        <li class="px-3 my-3 border-end"><a href="#" class="white d-block d-lg-inline-block">Cookie Policy</a></li>
+                        <li class="px-3 my-3"><a href="#" class="white d-block d-lg-inline-block">Manage Cookie Preferences</a></li>
+                    </ul>
+                </div>
+                <div class="sec4 pt-5 d-flex align-items-center">
+                    <div class="row align-items-center p-0 ps-lg-7">
+                        <div class="col-12 col-md-6 col-xl-3 order-0">
+                            <a class="language-btn mb-4 white text-decoration-none rounded-2 d-flex justify-content-between align-items-center" href="#">
+                                <div>
+                                    <img src="assets/img/india.png" alt="india" class="india-img">India - English
+                                </div>
+                                <i class='bx bxs-chevron-down'></i>
+                            </a>
+                        </div>
+                        <div class="col-12 order-2 col-xl-6 order-xl-1">
+                            <div class="desc mb-4 text-center text-xl-start">
+                                ©2023 H-D or its affiliates. HARLEY-DAVIDSON, HARLEY, H-D, and the Bar and Shield Logo are among the trademarks of H-D U.S.A., LLC.
+                                Third-party trademarks are the property of their respective owners.
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 order-1 col-xl-3 order-xl-2">
+                            <div class="text-center">
+                                <a class="white text-decoration-none fs-1" href="https://www.facebook.com/HarleyDavidsonindia/">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                                <a class="white text-decoration-none fs-1" href="https://twitter.com/HarleyIndia">
+                                    <i class='bx bxl-twitter'></i>
+                                </a>
+                                <a class="white text-decoration-none fs-1" href="https://www.instagram.com/harleydavidson_india/">
+                                    <i class='bx bxl-instagram'></i>
+                                </a>
+                                <a class="white text-decoration-none fs-1" href="https://www.youtube.com/user/harleydavidsonindia">
+                                    <i class='bx bxl-youtube'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ======= FOOTER END ======= -->
+    </main>
+    <!-- Jquery -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/material-kit/material-kit.min.js"></script>
+    <!-- js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
