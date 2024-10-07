@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=prompt("enter number 1");
+        var b=prompt("enter number 2");
+        
+    </script> 
+    <!-- <script src="../CLASSWORK/string.js"></script> -->
+</head>
+<body>
+    <p id="result"></p>
+    <button id="button" onclick="document.getElementById('result').innerHTML= (a===b)">click me</button>
+    <p id="fruits">fruits</p>
+    <button id="button" onclick="myfun()">FRUITS</button>
+<script>
+   /* function myfun()
+        {
+            var fruits="     banana"
+            var fruits2=fruits.toUpperCase().trim()
+            console.log(fruits2)
+            document.getElementById("fruits").innerHTML=fruits2;
+        }
+
+        var user={
+            name:"john",
+            class:"FEE",
+            ROLLNO:2527,
+            t:"gsgg"
+        }
+        console.log(user.t);
+        console.log(user.name);
+
+function EmployData(data) {
+  this.id = data.id;
+  this.name = data.name;
+  this.designation = data.designation;
+}*/
+var cart = [
+  { id: 1, name: 'iphone 16', price: 164000, qty: 1 },
+  { id: 2, name: 'iphone 15', price: 84000, qty: 2 },
+];
+
+function calculateTotalPrice(cart) {
+  let totalPrice = 0;
+  for (let i = 0; i < cart.length; i++) {
+    totalPrice += cart[i].price * cart[i].qty;
+  }
+  return totalPrice;
+}
+var person1={
+    name:"yash",
+    age:23,
+    Subject:"javascript"
+  }
+  const person2=Object.create(person1)
+  console.log(person1);
+  console.log(person2);
+  console.log(person2.name)
+  person2.name="piyush";
+  console.log(person2.name)
+  function EmployeeData(data) {
+  this.id = data.id;
+  this.name = data.name;
+  this.designation = data.designation;
+}
+
+var data = {
+  id: 2310992242,
+  name: "vidhi",
+  designation: "lead"
+};
+
+var employee = new EmployeeData(data);
+console.log(employee);
+console.log(calculateTotalPrice(cart)); 
+console.log(person2.__proto__==person1);
+console.log(person2.prototype.__proto__)
+//person 1 ka beta person 2 and person 2 proper person ki nakal krega 
+</script>
+</body>
+</html>
